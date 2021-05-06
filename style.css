@@ -1,0 +1,140 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 2px solid #377933;
+  border-radius: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+span, svg {
+  position: absolute;
+  color: #377933;
+  fill: transparent;
+}
+
+button:hover {
+  font-size: 14px;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-left: 2px solid #377933;
+  border-bottom: 2px solid #377933;
+  -webkit-animation: spin 2s 500ms forwards;
+          animation: spin 2s 500ms forwards;
+}
+
+button:focus span {
+  color: transparent;
+}
+
+button:focus svg {
+  -webkit-animation: check 500ms 2300ms forwards;
+          animation: check 500ms 2300ms forwards;
+}
+
+@-webkit-keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #377933;
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border: 2px solid #377933;
+  }
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #377933;
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border: 2px solid #377933;
+  }
+}
+
+@-webkit-keyframes check {
+  to {
+    fill: #377933;
+  }
+}
+
+@keyframes check {
+  to {
+    fill: #377933;
+  }
+}
+
+@-webkit-keyframes circle {
+  to {
+    border: 2px solid #377933;
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid #377933;
+  }
+}
+/*# sourceMappingURL=style.css.map */
